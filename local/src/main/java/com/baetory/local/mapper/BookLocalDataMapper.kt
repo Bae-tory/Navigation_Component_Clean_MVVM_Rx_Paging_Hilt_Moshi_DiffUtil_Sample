@@ -8,6 +8,7 @@ class BookLocalDataMapper @Inject constructor() : RoomObjectMapper<BookRoomObjec
 
     override fun toDataModel(roomObject: BookRoomObject): BookDataModel =
         BookDataModel(
+            id = 0,
             isEnd = roomObject.isEnd,
             authors = roomObject.authors,
             translators = roomObject.translators,
